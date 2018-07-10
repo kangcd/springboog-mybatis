@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>demo_springboog_mybatis</artifactId>
+	<artifactId>springbot_mybatis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>demo_springboog_mybatis</name>
+	<name>springboot_mybatis</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -39,7 +39,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
-
 		<!-- 日志-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -90,6 +89,14 @@
 				<includes>
 					<include>**/*.xml</include>
 				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
 			</resource>
 		</resources>
 		<plugins>
